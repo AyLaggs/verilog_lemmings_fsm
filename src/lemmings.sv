@@ -56,11 +56,9 @@ module top_module(
         
     end
     
-    always @(*) begin
-        walk_left	=	( state == L );
-        walk_right	=	( state == R );
-        aaah		=	( state == F_L ) | ( state == F_R ) | ( state == SP );
-        digging		=	( state == D_L ) | ( state == D_R );
-    end    
+    assign walk_left	=	( state == L );
+    assign walk_right	=	( state == R );
+    assign aaah		=	( state == F_L ) | ( state == F_R ) | ( state == SP );
+    assign digging		=	( state == D_L ) | ( state == D_R );
 
 endmodule
