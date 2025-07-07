@@ -16,8 +16,8 @@ Lastly, Lemmings may splatter if they descend for an extended period of time bef
 
 - `src/`: Source design files
 - `tb/`: Testbench files
-- `pre-rtl media`: State diagrams, Circuit schematics, etc
-- `post-sim media`: Timing diagrams, Simulation output, etc
+- `pre-rtl media/`: State diagrams, Circuit schematics, etc
+- `post-sim media/`: Timing diagrams, Simulation output, etc
 
 ## Tools Used
 
