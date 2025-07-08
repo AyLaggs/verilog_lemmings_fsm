@@ -27,7 +27,7 @@ Lastly, Lemmings may splatter if they descend for an extended period of time bef
 
 ## Features
 
-- Asynchronous reset
+- Asynchronous active-high reset
 - Binary-Encoded States
 
 ## Impact
