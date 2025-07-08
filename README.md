@@ -32,8 +32,9 @@ Lastly, Lemmings may splatter if they descend for an extended period of time bef
 
 ## Impact
 
-- I became more confident in designing finite-state machines for real-world applications.
+- My confidence in designing finite-state machines for real-world applications was boosted.
 - I discovered that if I intend to assign values to two variables in an if-else statement, I must assign to both of them in every condition to avoid latches.
+- I designed my first testbench module in Verilog, and realized after further study that SystemVerilog additions such as 'assertions' make the process easier and more effective.
 
 ## Project Idea Source
 
