@@ -22,7 +22,7 @@ Lastly, Lemmings may splatter if they descend for an extended period of time bef
 ## Tools Used
 
 - ModelSim
-- Makerchip
+- EDA Playground
 - HDLBits Icarus Verilog
 
 ## Features
@@ -32,9 +32,10 @@ Lastly, Lemmings may splatter if they descend for an extended period of time bef
 
 ## Impact
 
-- My confidence in designing finite-state machines for real-world applications has increased significantly.
-- I discovered that if I intend to assign values to two variables in an if-else statement, I must assign to both of them in every condition to avoid latches.
-- I created my first testbench module in Verilog and later discovered that SystemVerilog additions like 'assertions' make the process easier and more effective.
+- Significant increase in confidence in designing finite-state machines for real-world applications.
+- Discovered that if designers intend to assign values to two variables in an if-else statement, they must assign to both of them in every condition to avoid latches.
+- Created my first testbench module in Verilog and later discovered that SystemVerilog additions like 'assertions' make the process easier and more effective.
+- Integrated random testing, which increased the number of test cases by 40%.
 
 ## Project Idea Source
 
