@@ -25,8 +25,9 @@ module lemmings(
     reg [2:0] state, next_state;
     reg [31:0] count;
     wire [31:0] next_count;
-    wire en; //countdown till splatter time
-    
+    wire en; 
+
+    //next-state logic
     always @(*) begin
         case ( state )
             L		:	next_state = ground ? ( dig ? D_L : ( bump_left ? R : L ) ) : F_L;
@@ -40,10 +41,12 @@ module lemmings(
             default	:	next_state = L;
         endcase
     end
-    
+
+    //countdown till splatter time
     assign en = ( ( ( state == F_L ) | ( state == F_R ) ) & ~ground );
     assign next_count = ( en ? ( count + 1 ) : 32'b0 );
-    
+
+    //state flip-flops
     always @(posedge clk, posedge areset) begin
         if (areset) begin
             state <= L;
@@ -55,7 +58,8 @@ module lemmings(
         end
         
     end
-    
+
+    //output logic
     assign walk_left	=	( state == L );
     assign walk_right	=	( state == R );
     assign aaah		=	( state == F_L ) | ( state == F_R ) | ( state == SP );
